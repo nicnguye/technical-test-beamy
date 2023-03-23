@@ -11,6 +11,7 @@
     "install_level1": "cd level1 && npm i",
     "test_level1": "cd level1 && npm run test",
     "install_level2": "cd level2 && npm run mount-redis && npm i",
+    "test_level2": "cd level2 && npm run test",
     "generate_logs": "node initLogFiles.js",
     "emit_logs": "node lib/httpEmitter.js",
     "example_compute": "node exampleCompute.js",
