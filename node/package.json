@@ -1,0 +1,26 @@
+{
+  "name": "backend_test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Technical test for backend dev at beamy.io",
+  "main": "index.js",
+  "scripts": {
+    "start_level1": "cd level1 && npm start",
+    "start_level2": "cd level2 && npm start",
+    "prepare": "npm run install_level1 && npm run install_level2",
+    "install_level1": "cd level1 && npm i",
+    "test_level1": "cd level1 && npm run test",
+    "install_level2": "cd level2 && npm run mount-redis && npm i",
+    "generate_logs": "node initLogFiles.js",
+    "emit_logs": "node lib/httpEmitter.js",
+    "example_compute": "node exampleCompute.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "lodash": "^4.17.20",
+    "uuid": "^8.3.2"
+  }
+}
